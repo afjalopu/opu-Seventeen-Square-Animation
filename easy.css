@@ -1,0 +1,495 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    animation: section 7s linear infinite;
+}
+@keyframes section{
+
+    0%{
+        background-color: rgb(255, 255, 255);
+    } 
+    25%{
+        background-color: rgb(0, 226, 30);
+    }
+    50%{
+        background-color: rgb(250, 34, 232);
+    } 
+    75%{
+        background-color: rgb(247, 85, 26);
+    } 
+    100%{
+        background-color: #0fefff;
+    } 
+}
+.loader{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    background-color: black;
+    animation: loader 7s linear infinite;
+}
+/*
+------Animation for the Middle White Part------
+
+ @keyframes loader{
+    0%{
+        transform: rotate(45deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+} */
+
+.loader div{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.loader div:nth-child(1)
+{
+    position: absolute;
+    top: 60px;
+    transform-origin: top left;
+    animation: first 7s linear infinite;
+}
+.loader div:nth-child(1)::before
+{
+    background-color: rgba(0, 0, 0, 0.925);
+}
+@keyframes first{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+
+.loader div:nth-child(2)
+{
+    position: absolute;
+    top: -60px;
+    transform-origin: bottom right;
+    animation: second 7s linear infinite;
+}
+@keyframes second{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+.loader div:nth-child(2)::before
+{
+    background-color: rgb(0, 0, 0);
+}
+
+.loader div:nth-child(3)
+{
+    position: absolute;
+    left: 60px;
+    transform-origin: bottom left;
+    animation: third 7s linear infinite;
+}
+.loader div:nth-child(3)::before
+{
+    background-color: rgb(0, 0, 0);
+}
+@keyframes third{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+.loader div:nth-child(4)
+{
+    position: absolute;
+    right: 60px;
+    transform-origin: top right;
+    animation: fourth 7s linear infinite;
+}
+.loader div:nth-child(4)::before
+{
+    background-color: rgb(0, 0, 0);
+}
+@keyframes fourth{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+
+.loader div:nth-child(5)
+{
+    position: absolute;
+    top: 180px;
+    transform-origin: left top;
+    animation: fifth 7s linear infinite ;
+}
+.loader div:nth-child(5)::before
+{
+    background-color:rgb(0, 0, 0);
+}
+@keyframes fifth{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+.loader div:nth-child(6)
+{
+    position: absolute;
+    top: -120px;
+    transform-origin: bottom right;
+    animation: six 7s linear infinite;
+}
+.loader div:nth-child(6)::before
+{
+    background-color: rgb(0, 255, 221);
+}
+@keyframes six
+{
+    0%{
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(180deg);
+        }
+        100%{
+            transform: rotate(180deg);
+        }
+}
+/* 
+-----Unnecessary Child has been Written by Mistake------
+
+.loader div:nth-child(7)
+{
+    position: absolute;
+    left: 120px;
+    transform-origin: bottom left;
+    animation: seventh 7s linear infinite;
+}
+.loader div:nth-child(7)::before
+{
+    background-color: rgb(255, 0, 0);
+}
+
+@keyframes seventh
+{
+    0%{
+        transform: rotate(0deg);
+        }
+    50%{
+        transform: rotate(180deg);
+        }
+    100%{
+        transform: rotate(180deg);
+        }
+} */
+
+.loader div:nth-child(8)
+{
+    position: absolute;
+    left: 180px;
+    transform-origin: bottom left;
+    animation: eight 7s linear infinite;
+}
+.loader div:nth-child(8)::before
+{
+    background-color: rgba(0, 0, 0, 0.856);
+}
+@keyframes eight{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+.loader div:nth-child(9)
+{
+    position: absolute;
+    top: 120px;
+    transform-origin: top left ;
+    animation: ninth 7s linear infinite ;
+}
+.loader div:nth-child(9)::before
+{
+    background-color: rgb(250, 110, 59);
+}
+
+@keyframes ninth{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+.loader div:nth-child(10)
+{
+    position: absolute;
+    left: 120px;
+    transform-origin: bottom left ;
+    animation: tenth 7s linear infinite ;
+}
+.loader div:nth-child(10)::before
+{
+    background-color: rgb(252, 129, 170);
+}
+
+@keyframes tenth{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+
+.loader div:nth-child(11)
+{
+    position: absolute;
+    left: -120px;
+    transform-origin: top right;
+    animation: eleventh 7s linear infinite;
+}
+.loader div:nth-child(11)::before
+{
+    background-color: rgb(54, 253, 36);
+}
+@keyframes eleventh{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+
+.loader div:nth-child(12)
+{
+    position: absolute;
+    left: -180px;
+    transform-origin: top right;
+    animation: twelve 7s linear infinite;
+}
+.loader div:nth-child(12)::before
+{
+    background-color: rgb(0, 0, 0);
+}
+@keyframes twelve{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+.loader div:nth-child(13)
+{
+    position: absolute;
+    top: -180px;
+    transform-origin: bottom right;
+    animation: thirteen 7s linear infinite;
+}
+.loader div:nth-child(13)::before
+{
+    background-color: rgb(0, 0, 0);
+}
+@keyframes thirteen{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+.loader div:nth-child(14)
+{
+    position: absolute;
+    left: -60px;
+    top: -60px;
+    transform-origin: top right;
+    animation: fourtheen 7s linear infinite ;
+}
+.loader div:nth-child(14)::before
+{
+    background-color: rgb(0, 0, 0);
+}
+@keyframes fourtheen
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    80%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+/* ---------------- */
+.loader div:nth-child(15)
+{
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    transform-origin: bottom right;
+    animation: fifteen 7s linear infinite;
+}
+.loader div:nth-child(15)::before
+{
+    background-color: rgb(0, 0, 0);
+}
+
+@keyframes fifteen
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    80%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+/* ----------------- */
+
+.loader div:nth-child(16)
+{
+    position: absolute;
+    bottom: -60px;
+    right: -60px;
+    transform-origin: bottom left;
+    animation: sixteen 7s linear infinite;
+}
+.loader div:nth-child(16)::before
+{
+    background-color: rgb(0, 0, 0);
+}
+
+@keyframes sixteen
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    80%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+/* -------------------------- */
+.loader div:nth-child(17)
+{
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    transform-origin: top left;
+    animation: seventeen 7s linear infinite;
+}
+.loader div:nth-child(17)::before
+{
+    background-color: rgb(0, 0, 0);
+}
+
+@keyframes seventeen
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    80%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+
+.loader::before, 
+.loader div::before
+{
+    content: '';
+    position: absolute;
+    background-color: white;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+}
